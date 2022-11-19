@@ -7,10 +7,11 @@ import (
 )
 
 var playersCmd = &cobra.Command{
-	Use:   "players",
+	Use:   "players <username> [username]...",
 	Short: "Update players by username",
+	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("update players called")
+		fmt.Printf("updating players: %+q\n", args)
 	},
 }
 
