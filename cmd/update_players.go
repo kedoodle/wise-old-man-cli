@@ -3,9 +3,8 @@ package cmd
 import (
 	"fmt"
 	"log"
-	"net/http"
-	"net/url"
 
+	wise "github.com/kedoodle/wise-old-man"
 	"github.com/spf13/cobra"
 )
 
@@ -15,16 +14,13 @@ var playersCmd = &cobra.Command{
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("updating players: %+q\n", args)
-		client := http.Client{}
+		wise := wise.New()
+		ctx := cmd.Context()
 		for _, username := range args {
-			url := url.URL{
-				Scheme: "https",
-				Host:   "api.wiseoldman.net",
-				Path:   fmt.Sprintf("/v2/players/%s", username),
-			}
-			_, err := client.Post(url.String(), "application/json", nil)
+			_, err := wise.UpdatePlayer(ctx, username)
 			if err != nil {
 				log.Printf("error updating player %q: %v", username, err)
+				continue
 			}
 			log.Printf("updated player %q", username)
 		}
