@@ -20,6 +20,7 @@ var playersCmd = &cobra.Command{
 			_, err := wise.UpdatePlayer(ctx, username)
 			if err != nil {
 				log.Printf("error updating player %q: %v", username, err)
+				continue
 			}
 			log.Printf("updated player %q", username)
 		}
