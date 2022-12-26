@@ -3,7 +3,7 @@ module github.com/kedoodle/wise-old-man-cli
 go 1.19
 
 require (
-	github.com/kedoodle/wise-old-man v0.1.0
+	github.com/kedoodle/wise-old-man v0.1.1
 	github.com/spf13/cobra v1.6.1
 )
 

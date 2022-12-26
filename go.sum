@@ -2,8 +2,8 @@ github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46t
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/inconshreveable/mousetrap v1.0.1 h1:U3uMjPSQEBMNp1lFxmllqCPM6P5u/Xq7Pgzkat/bFNc=
 github.com/inconshreveable/mousetrap v1.0.1/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
-github.com/kedoodle/wise-old-man v0.1.0 h1:l/hv40pOxwdd2DzkUYlM17QrTenGgTOCCClP0t60PD0=
-github.com/kedoodle/wise-old-man v0.1.0/go.mod h1:bJj+9E07Muef5ccWHc1a1QZcSbCGBIRBc6Kz8pur42I=
+github.com/kedoodle/wise-old-man v0.1.1 h1:toMghD0+tKOrkjhY6PKeVxUve21BpPOzxe4A75HftTE=
+github.com/kedoodle/wise-old-man v0.1.1/go.mod h1:bJj+9E07Muef5ccWHc1a1QZcSbCGBIRBc6Kz8pur42I=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/spf13/cobra v1.6.1 h1:o94oiPyS4KD1mPy2fmcYYHHfCxLqYjJOhGsCHFZtEzA=
